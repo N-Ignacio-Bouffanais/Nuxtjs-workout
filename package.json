@@ -13,5 +13,9 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^3.7.0",
     "prisma": "^5.2.0"
+  },
+  "dependencies": {
+    "@formkit/nuxt": "^0.19.3",
+    "@nuxtjs/fontaine": "^0.4.1"
   }
 }
