@@ -6,9 +6,11 @@ specifiers:
   '@nuxtjs/tailwindcss': ^6.8.0
   nuxt: ^3.7.0
   prisma: ^5.2.0
+  zod: ^3.22.2
 
 dependencies:
   '@nuxtjs/fontaine': 0.4.1
+  zod: 3.22.2
 
 devDependencies:
   '@nuxt/devtools': 0.8.2_nuxt@3.7.0
@@ -7635,3 +7637,7 @@ packages:
       compress-commons: 4.1.1
       readable-stream: 3.6.2
     dev: true
+
+  /zod/3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+    dev: false
