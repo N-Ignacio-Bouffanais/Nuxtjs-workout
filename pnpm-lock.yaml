@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@formkit/nuxt': ^0.19.3
   '@nuxt/devtools': latest
   '@nuxtjs/fontaine': ^0.4.1
   '@nuxtjs/tailwindcss': ^6.8.0
@@ -9,7 +8,6 @@ specifiers:
   prisma: ^5.2.0
 
 dependencies:
-  '@formkit/nuxt': 0.19.3
   '@nuxtjs/fontaine': 0.4.1
 
 devDependencies:
@@ -785,114 +783,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@formkit/core/0.19.3:
-    resolution: {integrity: sha512-6AFthe72r8JeO4C2XwZ2ETcPPzL5HArgh7zKFJHhPAQHA5pTcoyNC/LkwytMGQy8Zr19s9W51ZAGeu4wydUwLw==}
-    dependencies:
-      '@formkit/utils': 0.19.3
-    dev: false
-
-  /@formkit/dev/0.19.3:
-    resolution: {integrity: sha512-1LAhM5pf2rWBN6mEa9d3fceTSudWVwqL42DeVpNx7EQxCzRwya1ERSXTebQXnjEgcsT85S9oF5g1LyJ4WZ/Gjg==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/utils': 0.19.3
-    dev: false
-
-  /@formkit/i18n/0.19.3:
-    resolution: {integrity: sha512-PCMNa+K6/8yje68Cb0xa1DqxADyVZKkmtd5A1AnBe289QCTTyJXhKqFb814UhwVHZBeff1gvvj0CClVhrLGMjg==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/utils': 0.19.3
-      '@formkit/validation': 0.19.3
-    dev: false
-
-  /@formkit/inputs/0.19.3:
-    resolution: {integrity: sha512-M/Rtrc9UyHiwk4QgK3pzwWJiDZarfDvKvMQ5R+4Li5wgP9n+C4QDre47eccQlBYaFK0jWC2B/N7qzHxGz+8z9g==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/utils': 0.19.3
-    dev: false
-
-  /@formkit/nuxt/0.19.3:
-    resolution: {integrity: sha512-/uH8JKJ7uasnYv1/O+a/JfOq5tR9n8yUpcyJ9q8orGfH7dXXI2I05N/FWp954KUlFU+Hy5v0nOeP7jyTVdXFhA==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/i18n': 0.19.3
-      '@formkit/vue': 0.19.3
-      '@nuxt/kit': 3.7.0
-      chokidar: 3.5.3
-      pathe: 1.1.1
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-      - tailwindcss
-      - unocss
-      - windicss
-    dev: false
-
-  /@formkit/observer/0.19.3:
-    resolution: {integrity: sha512-v/Nz1Y4ojW0EvlJzJA+5zkyR2OoE/l5ktU6Zw+/vgwyLnWvuedRoJwSlEXzeXzPdH3e+UgBR1MYPdZl7rnA6XA==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/utils': 0.19.3
-    dev: false
-
-  /@formkit/rules/0.19.3:
-    resolution: {integrity: sha512-qtgj/k8oLZrGmCc9nLzincDhi84v86ELcBX9OxUO+Amy9Ox2q0zbvXvIpRTXhd3u89jleTnpl6Ck0OSowYbDIA==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/utils': 0.19.3
-      '@formkit/validation': 0.19.3
-    dev: false
-
-  /@formkit/themes/0.19.3:
-    resolution: {integrity: sha512-RKJwuys4ne6B8oiJgAOyCpdCe83g9vqRA2tFZWEJzALgcQjMg7cQ8V1vQLl+1vnfjx6NbNERaxkDPgcsHOGXTQ==}
-    peerDependencies:
-      tailwindcss: ^3.2.0
-      unocss: ^0.31.0
-      windicss: ^3.0.0
-    peerDependenciesMeta:
-      tailwindcss:
-        optional: true
-      unocss:
-        optional: true
-      windicss:
-        optional: true
-    dependencies:
-      '@formkit/core': 0.19.3
-    dev: false
-
-  /@formkit/utils/0.19.3:
-    resolution: {integrity: sha512-S7iSnFxM/mYpVxMe550oUYJGiW3KTaovylsXXWXe29h2RGnxIumsmGEi3bpmhkA3QtsL4DvsU10fGGL2nVP0gA==}
-    dev: false
-
-  /@formkit/validation/0.19.3:
-    resolution: {integrity: sha512-eXuUnZo6yalcu0asBJYsLZhFE9DH9qj+SO2sKJ8KKljpm39+Twsf3Ia2mpojK6TqRkgHGQkLP2fexaSPJv/GXA==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/observer': 0.19.3
-      '@formkit/utils': 0.19.3
-    dev: false
-
-  /@formkit/vue/0.19.3:
-    resolution: {integrity: sha512-Zdypkj8mUi4Xr3Tl34wKG95HQAN0NIlQqMfdLyp1ptto1hPASHYUBbIhUZdTtCjZktgQDl35vaOi774vkdt4mQ==}
-    dependencies:
-      '@formkit/core': 0.19.3
-      '@formkit/dev': 0.19.3
-      '@formkit/i18n': 0.19.3
-      '@formkit/inputs': 0.19.3
-      '@formkit/observer': 0.19.3
-      '@formkit/rules': 0.19.3
-      '@formkit/themes': 0.19.3
-      '@formkit/utils': 0.19.3
-      '@formkit/validation': 0.19.3
-      vue: 3.3.4
-    transitivePeerDependencies:
-      - tailwindcss
-      - unocss
-      - windicss
-    dev: false
 
   /@hapi/hoek/9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -1957,12 +1847,14 @@ packages:
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       source-map-js: 1.0.2
+    dev: true
 
   /@vue/compiler-dom/3.3.4:
     resolution: {integrity: sha512-wyM+OjOVpuUukIq6p5+nwHYtj9cFroz9cwkfmP9O1nzH68BenTTv0u7/ndggT8cIQlnBeOo6sUT/gvHcIkLA5w==}
     dependencies:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
+    dev: true
 
   /@vue/compiler-sfc/3.3.4:
     resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==}
@@ -1977,12 +1869,14 @@ packages:
       magic-string: 0.30.3
       postcss: 8.4.29
       source-map-js: 1.0.2
+    dev: true
 
   /@vue/compiler-ssr/3.3.4:
     resolution: {integrity: sha512-m0v6oKpup2nMSehwA6Uuu+j+wEwcy7QmwMkVNVfrV9P2qE5KshC6RwOCq8fjGS/Eak/uNb8AaWekfiXxbBB6gQ==}
     dependencies:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
+    dev: true
 
   /@vue/devtools-api/6.5.0:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
@@ -1996,17 +1890,20 @@ packages:
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       magic-string: 0.30.3
+    dev: true
 
   /@vue/reactivity/3.3.4:
     resolution: {integrity: sha512-kLTDLwd0B1jG08NBF3R5rqULtv/f8x3rOFByTDz4J53ttIQEDmALqKqXY0J+XQeN0aV2FBxY8nJDf88yvOPAqQ==}
     dependencies:
       '@vue/shared': 3.3.4
+    dev: true
 
   /@vue/runtime-core/3.3.4:
     resolution: {integrity: sha512-R+bqxMN6pWO7zGI4OMlmvePOdP2c93GsHFM/siJI7O2nxFRzj55pLwkpCedEY+bTMgp5miZ8CxfIZo3S+gFqvA==}
     dependencies:
       '@vue/reactivity': 3.3.4
       '@vue/shared': 3.3.4
+    dev: true
 
   /@vue/runtime-dom/3.3.4:
     resolution: {integrity: sha512-Aj5bTJ3u5sFsUckRghsNjVTtxZQ1OyMWCr5dZRAPijF/0Vy4xEoRCwLyHXcj4D0UFbJ4lbx3gPTgg06K/GnPnQ==}
@@ -2014,6 +1911,7 @@ packages:
       '@vue/runtime-core': 3.3.4
       '@vue/shared': 3.3.4
       csstype: 3.1.2
+    dev: true
 
   /@vue/server-renderer/3.3.4_vue@3.3.4:
     resolution: {integrity: sha512-Q6jDDzR23ViIb67v+vM1Dqntu+HUexQcsWKhhQa4ARVzxOY2HbC7QRW/ggkDBd5BU+uM1sV6XOAP0b216o34JQ==}
@@ -2023,9 +1921,11 @@ packages:
       '@vue/compiler-ssr': 3.3.4
       '@vue/shared': 3.3.4
       vue: 3.3.4
+    dev: true
 
   /@vue/shared/3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
+    dev: true
 
   /abbrev/1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -2984,6 +2884,7 @@ packages:
 
   /csstype/3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: true
 
   /cuint/0.2.2:
     resolution: {integrity: sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==}
@@ -4970,6 +4871,7 @@ packages:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: true
 
   /nanoid/4.0.2:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
@@ -6131,6 +6033,7 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /pretty-bytes/6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
@@ -6614,6 +6517,7 @@ packages:
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+    dev: true
 
   /source-map-support/0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
@@ -7545,6 +7449,7 @@ packages:
       '@vue/runtime-dom': 3.3.4
       '@vue/server-renderer': 3.3.4_vue@3.3.4
       '@vue/shared': 3.3.4
+    dev: true
 
   /wait-on/7.0.1:
     resolution: {integrity: sha512-9AnJE9qTjRQOlTZIldAaf/da2eW0eSRSgcqq85mXQja/DW3MriHxkpODDSUEg+Gri/rKEcXUZHe+cevvYItaog==}
