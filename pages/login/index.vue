@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center h-[32rem] items-center min-h-[100dvh] bg-slate-200">
+  <div class="flex justify-center h-[32rem] items-center min-h-[100dvh] bg-slate-200 dark:bg-black" >
     <div class="flex flex-col w-[24rem] sm:w-[28rem] px-8 pt-10 pb-8 bg-white rounded-xl">
       <form>
         <label class="font-semibold text-lg justify-start w-52" for="email">Correo</label>
@@ -22,6 +22,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
+definePageMeta({
+  colorMode: 'light'
+})
+
+const colorMode = useColorMode()
+
+console.log(colorMode.preference)
+
 
 </script>

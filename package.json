@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@nuxtjs/fontaine": "^0.4.1",
+    "@prisma/client": "5.2.0",
+    "argon2": "^0.31.0",
     "zod": "^3.22.2"
   }
 }
